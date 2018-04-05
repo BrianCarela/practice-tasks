@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What weekday?</title>
+</head>
+<body>
+  <p id="message" onclick="showDay()"> Welcome! </p>
+  <script>
+    function showDay(){
+      var date = new Date;
+      var today;
+      console.log(date.getDay());
+      switch (date.getDay()){
+        case 0:
+          today = "Sunday";
+          break;
+        case 1:
+          today = "Monday";
+          break;
+        case 2:
+          today = "Tuesday";
+          break;
+        case 3:
+          today = "Wednesday";
+          break;
+        case 4:
+          today = "Thursday";
+          break;
+        case 5:
+          today = "Friday";
+          break;
+        case 6:
+          today = "Saturday";
+          break;
+      }
+      document.getElementById("message").innerHTML = "Welcome! The day of the week is " + today;
+    }
+  </script>
+</body>
+</html>

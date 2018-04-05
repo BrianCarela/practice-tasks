@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruit bar!</title>
+</head>
+<body>
+  <input type="button" value="Add Fruit" onclick="sortFruits()" />
+  <p id="smoothie"></p>
+  <script>
+    var fruits = ["apple", "orange", "kiwi"];
+    function sortFruits(){
+      fruits.push( prompt("Add a new fruit to your smoothie baby~") );
+      // console.log(fruits);
+      fruits.sort();
+      document.getElementById("smoothie").innerHTML = fruits.join(" with ");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fizz Buzz!</title>
+</head>
+<body>
+  <script>
+    var color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+    var o = ["th", "st", "nd", "rd"];
+    for (var i = 0; i < color.length; i++){
+      let order;
+      if (i < 3) {
+        order = o[i+1];
+      } else {
+        order = o[0];
+      }
+      console.log(`${i+1}${order} choice is ${color[i]}`);
+    }
+  </script>
+</body>
+</html>
