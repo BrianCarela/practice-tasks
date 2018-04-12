@@ -5,21 +5,31 @@
 </head>
 <body>
   <!-- When this is copied over from the slides, the quotes in "display" will appear as curly, and won't be functional. It will also return null, if you try to console log it, by finding the element by ID. -->
+  <!-- this is copied over, should be verbatim. MAYBE a single comment in this section like "this p tag is where the output will be", for clarity and thinking ahead. -->
   <p id="display"></p>
   <form>
     First name: <input type="text" id="fname"/><br>
     Last name: <input type="text" id="lname"/><br>
     <input type="button" value="Submit" onclick="getFormValue()"/>
   </form>
+  <!-- end of copied code. This is half the execution, and most of the output given for free, so just moving this code over correctly is 25% of the grade, in my opinion. -->
 
   <script>
+    // The name of this function is given, so this name should be the same. This counts for Readability
     function getFormValue(){
       // Students might not understand the difference between getting and setting the value of an HTML element, because up until this point, every single slide only shows an example of setting text/value of an HTML element, not receiving it, and storing it into a variable.
+      // The following 2 variables keep the code easy to read, and doesn't take away from efficiency. Readability+ for naming convention parallel to the HTML
       var fname = document.getElementById("fname").value;
       var lname = document.getElementById("lname").value;
+      // Unsure how console.log's play into the rubric, because it's important to test data before it goes out. Maybe suggest putting it in to test, and once a student feels the assignment is complete, comment it out for Documentation.
       console.log("Hello, my name is " + fname + " " + lname);
+      // Spacing for the string concatination is important. Especially the space btwn the fname and lname.
       document.getElementById("display").innerHTML = "Hello, my name is " + fname + " " + lname + ".";
     }
   </script>
+
+  <!-- At the bottom of each task, I'll take note of how it works with the grading rubric for assignments. I should also be commenting parts for specific notes. -->
+
+  <!-- Execution & Output are graded immediately upon user testing. 50% is graded before even seeing the code. -->
 </body>
 </html>
