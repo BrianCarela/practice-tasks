@@ -5,8 +5,11 @@
 </head>
 <body>
   <script>
+    // Skip 0
     var i = 1;
+    // if `i < 100` then it'll stop at 99
     while (i < 101) {
+      // This first line is optimal Efficiency. No "if %3 AND %5 === 0", 15 is the LCD.
       if (i % 15 === 0) {
         console.log("FizzBuzz");
       } else if (i % 3 === 0) {
@@ -19,5 +22,7 @@
       i++;
     }
   </script>
+
+  <!-- There are good opportunities to make the code Efficient, and literally writing the instructions for each condition is good Documentation. -->
 </body>
 </html>
