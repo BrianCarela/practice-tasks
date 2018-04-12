@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- TITLE IS STILL IMPORTANT -->
   <title>Find The Largest #</title>
 </head>
 <body>
   <script>
+    // "These happen immediately when you open up the page" is a good comment for documentation.
     var num1 = prompt("Enter your first number");
     var num2 = prompt("Enter your second number");
+    // slides still say to have a num3, I think that's too difficult for the introduction to conditionals. Could have it as a bonus imo
     // var num3 = prompt("Enter your third number");
     if (num1 > num2) {
+      // in terms of result, slides say to console.log it, but it should also be on the page.
       console.log(num1 + " is the larger number");
     } else if (num1 < num2) {
       console.log(num2 + " is the larger number");
@@ -18,5 +22,7 @@
       console.log("user error");
     }
   </script>
+
+  <!-- Output should consider the spaces in the strings. Documentation just means explain the variables and the overall conditional once. -->
 </body>
 </html>

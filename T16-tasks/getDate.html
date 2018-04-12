@@ -4,12 +4,15 @@
   <title>What weekday?</title>
 </head>
 <body>
-  <p id="message" onclick="showDay()"> Welcome! </p>
+  <!-- this should be clear that it needs to be clicked on -->
+  <p id="message" onclick="showDay()"> CLICK ME </p>
   <script>
     function showDay(){
       var date = new Date;
       var today;
       console.log(date.getDay());
+      // This switch statement better look clean af, even if parts are copied/pasted.
+      // Might be a good time to teach students "reindent"
       switch (date.getDay()){
         case 0:
           today = "Sunday";
@@ -36,5 +39,6 @@
       document.getElementById("message").innerHTML = "Welcome! The day of the week is " + today;
     }
   </script>
+  <!-- No notes on grading rubric. -->
 </body>
 </html>
