@@ -4,6 +4,9 @@
   <title>Fizz Buzz!</title>
 </head>
 <body>
+  <ol id="fizz">
+
+  </ol>
   <script>
     // Skip 0
     var i = 1;
@@ -12,12 +15,28 @@
       // This first line is optimal Efficiency. No "if %3 AND %5 === 0", 15 is the LCD.
       if (i % 15 === 0) {
         console.log("FizzBuzz");
+        var node = document.createElement("li")// .innerHTML = "FizzBuzz ";
+        var text = document.createTextNode("FizzBuzz");
+        node.appendChild(text);
+        document.getElementById("fizz").append(node);
       } else if (i % 3 === 0) {
         console.log("Fizz");
+        var node = document.createElement("li")// .innerHTML = "Fizz ";
+        var text = document.createTextNode("Fizz");
+        node.appendChild(text);
+        document.getElementById("fizz").append(node);
       } else if (i % 5 === 0) {
         console.log("Buzz");
+        var node = document.createElement("li")// .innerHTML = "Buzz ";
+        var text = document.createTextNode("Buzz");
+        node.appendChild(text);
+        document.getElementById("fizz").append(node);
       } else {
         console.log(i);
+        var node = document.createElement("li")// .innerHTML = i;
+        var text = document.createTextNode(`${i}`);
+        node.appendChild(text);
+        document.getElementById("fizz").append(node);
       }
       i++;
     }
