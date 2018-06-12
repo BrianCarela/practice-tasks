@@ -21,7 +21,12 @@
     button.addEventListener("click", changeText);
 
     function changeText(){
-      button.value = (button.value == "ON") ? "OFF" : "ON";
+      // button.value = (button.value == "ON") ? "OFF" : "ON";
+      if(button.value == "ON"){
+        button.value = "OFF";
+      } else{
+        button.value = "ON";
+      }
     }
 
     var box = document.getElementById("box");
